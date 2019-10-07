@@ -1,0 +1,17 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: Name
+        searchable: true
+    year:
+        label: Year
+        searchable: true
+    director:
+        label: Director
+        searchable: true
+    genre:
+        label: Genre
+        searchable: true
