@@ -1,4 +1,6 @@
-<?php namespace Jules\Movies\Controllers;
+<?php
+
+namespace Jules\Movies\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;
@@ -21,5 +23,10 @@ class Movies extends Controller
         parent::__construct();
 
         BackendMenu::setContext('Jules.Movies', 'movies', 'movies');
+    }
+
+    public function listExtendQuery($query)
+    {
+        return $query->where('year', '<', 2000);
     }
 }
